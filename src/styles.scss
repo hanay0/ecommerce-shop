@@ -1,1 +1,14 @@
 @import 'assets/styles/fonts.scss';
+@import "../node_modules/bootstrap-scss/functions";
+@import "../node_modules/bootstrap-scss/variables";
+@import "../node_modules/bootstrap-scss/mixins";
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @include media-breakpoint-down(xl) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
