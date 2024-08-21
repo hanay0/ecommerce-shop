@@ -1,0 +1,9 @@
+<section class="bg-black">
+    <div class="container-fluid" *ngIf="logos">
+        <div class="row marquee">
+            <div class="col-12 d-flex justify-content-between align-items-center logos__wrapper">
+                <img class="img-fluid" *ngFor="let logo of logos" src="{{logo.src}}" alt="{{logo.alt}}">
+            </div>
+        </div>
+    </div>
+</section>

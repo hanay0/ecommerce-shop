@@ -1,0 +1,22 @@
+<section id="main-banner" *ngIf="bannerData">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column align-items-start mb-5">
+                    <h1>{{bannerData.banner_title}}</h1>
+                    <p>{{bannerData.banner_desc}}</p>
+                    <a href="#" class="btn cta_btn">Shop Now</a>
+                </div>
+                <div class="d-flex banner__info__wrapper" *ngIf="bannerData.info">
+                    <p class="d-flex flex-column banner__info__single" *ngFor="let info of bannerData.info">
+                        <span class="mb-3">{{info.info_number}}+</span>
+                        <span class="text-capitalize">{{info.info_title}}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="banner-image" src="{{bannerData.banner_img}}" alt="banner_img">
+            </div>
+        </div>
+    </div>
+</section>
