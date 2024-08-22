@@ -14,7 +14,6 @@ export class LogosComponent implements OnInit {
   ngOnInit() {
     this.getDataService.getLogos().subscribe(res => {
       this.logos = res;
-      console.log(this.logos);
     });
   }
 }

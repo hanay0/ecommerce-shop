@@ -31,7 +31,7 @@
         font-family: $font-family-satoshi;
         font-weight: 600;
         color: #fff;
-        @include button(#fff, #000)
+        @include button(#fff, #000, #000)
     }
 
     .banner__info__wrapper {

@@ -1,13 +1,13 @@
 // mixin for handling hover state for buttons
-@mixin button($bg-color, $border-color) {
+@mixin button($bg-color, $border-color, $color) {
     cursor: pointer;
-    transition: background-color 0.3s;
-    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid $border-color;
   
     &:hover {
-      color: $border-color;
-      transition: background-color 0.3s;
+      color: rgba($border-color, 1);
+      transition: all 0.2s ease-in-out;
       background-color: $bg-color;
-      border-color: $border-color;
+      border-color: $color;
     }
 }

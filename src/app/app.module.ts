@@ -9,6 +9,10 @@ import { BannerComponent } from './components/home/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeWrapperComponent } from './components/home/home-wrapper/home-wrapper.component';
 import { LogosComponent } from './components/home/logos/logos.component';
+import { NewArrivalsComponent } from './components/home/new-arrivals/new-arrivals.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { LogosComponent } from './components/home/logos/logos.component';
     BannerComponent,
     HomeWrapperComponent,
     LogosComponent,
+    NewArrivalsComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RatingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

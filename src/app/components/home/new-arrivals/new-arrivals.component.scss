@@ -1,0 +1,15 @@
+@import '../../../../assets/styles/fonts.scss';
+
+.new__arrivals {
+    padding-top: 72px;
+    padding-bottom: 64px;
+
+    .new__arrivals-heading {
+        margin-bottom: 55px;
+
+        h2 {
+            font-family: $font-family-integral;
+            font-size: 48px;
+        }
+    }
+}

@@ -6,8 +6,6 @@
 
     .logos__wrapper {
         padding: 43px 0;
-        // display: inline-block;
-        animation: marquee 25s linear infinite;
     
         img {
             display: inline-block;
@@ -16,13 +14,4 @@
             object-fit: contain;
         }
     }
-
-    @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
 }

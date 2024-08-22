@@ -1,0 +1,73 @@
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/custom-mixins.scss';
+
+.product__card {
+    margin-bottom: 40px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 16px;
+    }
+
+    .product__card-heading {
+        font-family: $font-family-satoshi;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }    
+
+    .rating__wrapper {
+        margin-bottom: 8px;
+
+        .rating__wrapper-numbers {
+            span {
+                font-family: $font-family-satoshi;
+
+                &:first-of-type {
+                    color: #000;
+                }
+                &:last-of-type {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+    }
+
+    .price__wrapper {
+        span {
+            font-family: $font-family-satoshi;
+            font-weight: bold;
+            font-size: 24px;
+
+            &.old__price {
+                color: rgba(0, 0, 0, 0.4);
+                text-decoration: line-through;
+            }
+
+            &.discount {
+                font-weight: 500;
+                font-size: 12px;
+                background-color: #ffebeb;
+                color: #FF3333;
+                padding: 6px 13.5px;
+                border-radius: 60px;
+            }
+        }
+    }
+}
+
+.viewAll__wrapper {
+    button {
+        border-radius: 60px;
+        padding: 15px 80px;
+        font-family: $font-family-satoshi;
+        @include button(#fff, rgba(0, 0, 0, 0.1), #000);
+    }
+}
+
+:host ::ng-deep  
+    .p-rating-icon:not(.p-rating-cancel) { 
+    color: #FFC633; 
+}

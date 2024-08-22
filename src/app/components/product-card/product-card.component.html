@@ -1,0 +1,23 @@
+<div class="row gx-1">
+    <div class="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-start product__card" *ngFor="let item of data">
+        <img src="{{item.thumbnail}}" alt="{{item.title}}">
+        <div class="d-flex flex-column align-items-start">
+            <h3 class="fw-bold product__card-heading">{{item.title}}</h3>
+            <div class="d-flex align-items-center rating__wrapper">
+                <p-rating class="me-3 mt-1" [(ngModel)]="item.rating" [readonly]="true" [cancel]="false" />
+                <p class="d-flex align-items-center mb-0 rating__wrapper-numbers">
+                    <span>{{item.rating}}/</span>
+                    <span>5</span>
+                </p>
+            </div>
+            <div class="d-flex align-items-center price__wrapper">
+                <span class="me-2">${{item.price}}</span>
+                <span class="me-2 old__price" *ngIf="item.old_price">${{item.old_price}}</span>
+                <span class="discount" *ngIf="item.discountPercentage">{{item.discountPercentage}}%</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center align-items-center viewAll__wrapper">
+        <button class="btn">View All</button>
+    </div>
+</div>
