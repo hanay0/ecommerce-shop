@@ -1,4 +1,4 @@
-export interface NewArrivals {
+export interface HomeProducts {
     id: number;
     title: string;
     rating: number;

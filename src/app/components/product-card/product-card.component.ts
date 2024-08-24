@@ -7,10 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
   @Input() data!: any;
+  @Input() sellingData!: any;
   rating!: number;
 
   ngOnInit(): void {
-      console.log(this.data);
+      // console.log(this.data);
       this.rating = this.data?.rating
   }
 }

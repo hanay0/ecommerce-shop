@@ -13,6 +13,7 @@ import { NewArrivalsComponent } from './components/home/new-arrivals/new-arrival
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
+import { TopSellingComponent } from './components/home/top-selling/top-selling.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     LogosComponent,
     NewArrivalsComponent,
     ProductCardComponent,
+    TopSellingComponent,
   ],
   imports: [
     BrowserModule,

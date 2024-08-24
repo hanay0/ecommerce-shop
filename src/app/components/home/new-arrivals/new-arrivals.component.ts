@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetDataService } from '../../../core/services/get-data.service';
-import { NewArrivals } from '../../../core/models/new-arrivals';
+import { HomeProducts } from '../../../core/models/home-products';
 
 @Component({
   selector: 'app-new-arrivals',
@@ -8,15 +8,13 @@ import { NewArrivals } from '../../../core/models/new-arrivals';
   styleUrl: './new-arrivals.component.scss'
 })
 export class NewArrivalsComponent implements OnInit {
-  newArrivals!: NewArrivals[];
-  parentData!: {};
+  // newArrivals!: HomeProducts[];
+  newArrivalsData!: HomeProducts[];
   constructor(private getDataService: GetDataService) { }
 
   ngOnInit(): void {
       this.getDataService.getNewArrivals().subscribe(res => {
-        this.newArrivals = res;
-        this.parentData = res;
-        // console.log(res);
+        this.newArrivalsData = res;
       })
   }
 } 

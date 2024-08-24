@@ -1,0 +1,15 @@
+@import '../../../../assets/styles/fonts.scss';
+
+.top__selling {
+    padding-top: 72px;
+    padding-bottom: 64px;
+
+    .top__selling-heading {
+        margin-bottom: 55px;
+
+        h2 {
+            font-family: $font-family-integral;
+            font-size: 48px;
+        }
+    }
+}
