@@ -14,6 +14,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { TopSellingComponent } from './components/home/top-selling/top-selling.component';
+import { DressStyleComponent } from './components/home/dress-style/dress-style.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TopSellingComponent } from './components/home/top-selling/top-selling.c
     NewArrivalsComponent,
     ProductCardComponent,
     TopSellingComponent,
+    DressStyleComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<section class="categories">
+    <div class="container-fluid">
+        <div *ngIf="homeCategories" class="categories-wrapper">
+            <div
+             *ngFor="let category of homeCategories"
+             class="categoy-card"
+             style="background-image: url({{category.banner}})"
+             >
+            </div>
+        </div>
+    </div>
+</section>
