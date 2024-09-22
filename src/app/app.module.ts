@@ -15,7 +15,9 @@ import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { TopSellingComponent } from './components/home/top-selling/top-selling.component';
 import { DressStyleComponent } from './components/home/dress-style/dress-style.component';
-
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +30,16 @@ import { DressStyleComponent } from './components/home/dress-style/dress-style.c
     ProductCardComponent,
     TopSellingComponent,
     DressStyleComponent,
+    ReviewsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RatingModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

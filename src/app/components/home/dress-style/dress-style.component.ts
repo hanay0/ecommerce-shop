@@ -12,7 +12,7 @@ export class DressStyleComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getHomeCategories().subscribe(res => {
-      console.log(res.data.categories);
+      // console.log(res.data.categories);
       if (Array.isArray(res.data.categories)) {
         this.homeCategories = res.data.categories.map(category => ({ id: category.id, name: category.name, banner: category.banner }));
       } else {

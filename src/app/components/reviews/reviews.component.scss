@@ -1,0 +1,27 @@
+@import '../../../assets/styles/fonts.scss';
+
+.reviews {
+    h1 {
+        font-family: $font-family-integral;
+        font-size: 48px;
+    }
+
+    .card {
+        padding: 28px 32px;
+        min-height: 240px;
+    }
+}
+
+// modify rating icon color
+:host ::ng-deep  
+    .p-rating-icon:not(.p-rating-cancel) { 
+    color: #FFC633; 
+}
+
+:host ::ng-deep .p-carousel-content {
+    overflow-x: hidden;
+}
+
+:host ::ng-deep .p-carousel-indicators {
+    display: none;
+}

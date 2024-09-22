@@ -1,0 +1,23 @@
+<section class="reviews">
+    <div class="container-fluid">
+        <h1>{{sectionTitle}}</h1>
+    </div>
+    <!-- <div class="review-card" *ngFor="let review of reviews">
+        <span>{{review.rate}}</span>
+    </div> -->
+
+        <p-carousel
+            [value]="reviews" 
+            [numVisible]="3" 
+            [numScroll]="1" 
+            [circular]="false" 
+            [responsiveOptions]="responsiveOptions">
+                <ng-template let-review pTemplate="review">
+                    <div class="card d-flex flex-column">
+                        <p-rating [(ngModel)]="review.rate" [readonly]="true" [cancel]="false" />
+                        <p>{{ review.reviewerName }}</p>
+                        <p>{{ review.reviewDescription }}</p>
+                    </div>
+                </ng-template>
+        </p-carousel>
+</section>

@@ -3,9 +3,10 @@
         <div *ngIf="homeCategories" class="categories-wrapper">
             <div
              *ngFor="let category of homeCategories"
-             class="categoy-card"
+             class="categoy-card position-relative"
              style="background-image: url({{category.banner}})"
              >
+             <span id="category-name">{{category.name}}</span>
             </div>
         </div>
     </div>
